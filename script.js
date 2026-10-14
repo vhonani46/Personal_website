@@ -106,8 +106,8 @@ function updateActiveNav() {
 ======================== */
 const roles = [
     "Web Developer",
-    "IT Student",
-    "React Enthusiast",
+    "Software Engineer",
+    "Software Developer",
     "Problem Solver"
 ];
 
@@ -161,8 +161,8 @@ if (contactForm) {
         }
 
         // Replace these with your real EmailJS credentials.
-        const SERVICE_ID = "YOUR_SERVICE_ID";
-        const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+        const SERVICE_ID = "service_9p61tgd";
+        const TEMPLATE_ID = "template_aguzzmh";
 
         if (
             SERVICE_ID === "YOUR_SERVICE_ID" ||
