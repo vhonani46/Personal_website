@@ -229,7 +229,7 @@ if (contactForm) {
 const projects = [
     {
         title: "Personal Website",
-        image: "image1.jpg",
+        image: "image3.jpg",
         description:
             "A responsive personal portfolio built with HTML, CSS, and JavaScript showcasing my skills and projects.",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -237,17 +237,17 @@ const projects = [
         code: "https://github.com/vhonani46/Personal_website"
     },
     {
-        title: "React App",
-        image: "image2.jpg",
+        title: "Student Accomodation System",
+        image: "image3.jpg",
         description:
             "A dynamic React application demonstrating component-based architecture and state management.",
-        tags: ["React", "JavaScript"],
+        tags: ["PhP","Html & css", "JavaScript"],
         link: "#",
         code: "#"
     },
     {
         title: "JavaScript Calculator",
-        image: "image4.jpg",
+        image: "image3.jpg",
         description:
             "A simple calculator built using JavaScript that performs basic arithmetic operations.",
         tags: ["JavaScript", "CSS", "HTML"],
