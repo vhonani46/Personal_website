@@ -110,7 +110,7 @@ const projects = [
         image: "image1.jpg",
         description: "A responsive personal portfolio built with HTML, CSS, and JavaScript showcasing my skills and projects.",
         tags: ["HTML", "CSS", "JavaScript"],
-        link: "#",
+        link: "http://vhonani46.github.io/Personal_website/",
         code: "#"
     },
     {
@@ -126,8 +126,8 @@ const projects = [
         image: "image4.jpg",
         description: "A simple calculator built using JavaScript that performs basic arithmetic operations.",
         tags: ["JavaScript", "CSS"],
-        link: "#",
-        code: "#"
+        link: "https://vhonani46.github.io/calculator/",
+        code: "https://github.com/vhonani46/calculator/deployments/github-pages"
     }
 ];
 
