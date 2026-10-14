@@ -229,6 +229,7 @@ if (contactForm) {
 const projects = [
     {
         title: "Personal Website",
+        image:"image3.jpg",
         description:
             "A responsive personal portfolio built with HTML, CSS, and JavaScript showcasing my skills and projects.",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -237,6 +238,7 @@ const projects = [
     },
     {
         title: "Student Accomodation System",
+        image:"image3.jpg",
         description:
             "A dynamic React application demonstrating component-based architecture and state management.",
         tags: ["PhP","Html & css", "JavaScript"],
@@ -245,6 +247,7 @@ const projects = [
     },
     {
         title: "JavaScript Calculator",
+        image:"image3.jpg",
         description:
             "A simple calculator built using JavaScript that performs basic arithmetic operations.",
         tags: ["JavaScript", "CSS", "HTML"],
@@ -258,6 +261,15 @@ const projects = [
 ======================== */
 const container = document.getElementById("projectsContainer");
 const modal = document.getElementById("projectModal");
+
+ const image = document.createElement("img");
+        image.src = project.image;
+        image.alt = project.title;
+        image.loading = "lazy";
+
+        image.addEventListener("error", () => {
+            image.alt = `${project.title} image unavailable`;
+        }, { once: true });
 
 if (container) {
     container.replaceChildren();
