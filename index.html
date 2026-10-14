@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vhonani | Web Developer & IT Student</title>
+    <meta name="description" content="Portfolio of Vhonani — Web Developer & IT Student specializing in front-end development, React, and modern web technologies.">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+    </script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader"><div class="loader-ring"></div></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scrollProgress"></div>
+
+<nav>
+    <h1>Vhonani</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+        <button id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="section hero">
+    <img src="image3.jpg" alt="Profile" class="profile-img">
+    <h2 class="fade-in">Hello, I'm <span>Vhonani</span></h2>
+    <p class="fade-in delay">I'm a <span id="typedRole"></span></p>
+
+    <div class="social-links">
+        <a href="https://github.com/vhonani46" target="_blank" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/mpfuni45?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" aria-label="LinkedIn">in</a>
+        <a href="mailto:mpfunivhonani46@gmail.com" aria-label="Email">✉</a>
+    </div>
+
+    <div class="hero-buttons">
+        <a href="mailto:mpfunivhonani46@gmail.com?subject=Hire%20Me&body=Hello%20Vhonani" class="button">
+            Hire Me
+        </a>
+        <a href="MPFUNI123.pdf" download class="button outline">
+            Download CV
+        </a>
+    </div>
+
+    <div class="scroll-cue"><span></span>Scroll</div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats reveal" id="statsStrip">
+    <div class="stat"><span class="num" data-target="12">0</span><span class="label">Projects Built</span></div>
+    <div class="stat"><span class="num" data-target="3">0</span><span class="label">Years Learning</span></div>
+    <div class="stat"><span class="num" data-target="8">0</span><span class="label">Technologies</span></div>
+    <div class="stat"><span class="num" data-target="100">0</span><span class="label">% Committed</span></div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section reveal">
+    <span class="section-tag">Get to know me</span>
+    <h2>About Me</h2>
+    <p>
+        I am a motivated and detail-oriented Information Technology student with a strong
+        passion for web development and modern technologies. I enjoy creating interactive,
+        user-friendly websites and continuously improving my skills through hands-on projects
+        and self-learning.
+    </p>
+    <p>
+        My journey in IT has given me a solid foundation in front-end development, where I work
+        with HTML, CSS, and JavaScript to build responsive and visually appealing interfaces.
+        I am also familiar with React and enjoy exploring how JavaScript frameworks improve
+        performance and user experience.
+    </p>
+    <p>
+        Beyond coding, I value problem-solving, creative thinking, and effective communication.
+        I am always eager to learn new technologies, collaborate with others, and take on
+        challenges that help me grow both technically and professionally.
+    </p>
+    <p>
+        My goal is to become a skilled software or web developer, contribute to real-world
+        projects, and build solutions that make a positive impact. I am currently seeking
+        opportunities to gain practical experience and expand my knowledge in the tech industry.
+    </p>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section reveal">
+    <span class="section-tag">What I bring</span>
+    <h2>Skills</h2>
+    <p class="section-sub">A snapshot of where I'm strongest right now — and still actively improving.</p>
+
+    <div class="skills-grid">
+        <div class="skill-row">
+            <div class="skill-top"><span>HTML & CSS</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-top"><span>JavaScript</span><span>78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-fill="78"></div></div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-top"><span>React</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-fill="65"></div></div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-top"><span>Responsive / UI Design</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+        </div>
+        <div class="skill-row">
+            <div class="skill-top"><span>Problem Solving</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+        </div>
+    </div>
+
+    <div class="tools-row">
+        <span class="tool-chip">Git & GitHub</span>
+        <span class="tool-chip">VS Code</span>
+        <span class="tool-chip">Figma</span>
+        <span class="tool-chip">REST APIs</span>
+        <span class="tool-chip">Node.js (learning)</span>
+        <span class="tool-chip">SQL</span>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section reveal">
+    <span class="section-tag">Recent work</span>
+    <h2>My Projects</h2>
+    <p class="section-sub">A few things I've built while learning — click a card for details.</p>
+    <div class="projects" id="projectsContainer"></div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" alt="Project Image">
+        <h3 id="modalTitle"></h3>
+        <div class="tag-row" id="modalTags"></div>
+        <p id="modalDescription"></p>
+        <a id="modalLink" href="#" target="_blank">View Project</a>
+    </div>
+</div>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="section reveal">
+    <span class="section-tag">Kind words</span>
+    <h2>Testimonials</h2>
+    <p class="section-sub">What lecturers and collaborators have said about working with me.</p>
+
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <span class="quote-mark">"</span>
+            <p class="quote">Vhonani consistently delivers clean, well-structured code and is quick to pick up new tools. A strong addition to any dev team.</p>
+            <div class="testimonial-author">
+                <img src="" alt="Reviewer">
+                <div><strong>T. Mahlangu</strong><span>IT Lecturer</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <span class="quote-mark">"</span>
+            <p class="quote">Great communicator and problem solver. Vhonani took ownership of the front-end and shipped ahead of schedule.</p>
+            <div class="testimonial-author">
+                <img src="" alt="Reviewer">
+                <div><strong>K. Naidoo</strong><span>Project Partner</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <span class="quote-mark">"</span>
+            <p class="quote">Reliable, curious, and always looking to improve. Exactly the kind of junior developer worth investing in.</p>
+            <div class="testimonial-author">
+                <img src="" alt="Reviewer">
+                <div><strong>S. van der Merwe</strong><span>Mentor</span></div>
+            </div>
+        </div>
+    </div>
+    <p style="margin-top:14px; font-size:12px; opacity:0.55;">Replace with real references and photos before publishing.</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section reveal">
+    <span class="section-tag">Let's talk</span>
+    <h2>Contact Me</h2>
+    <p class="section-sub">Have an opportunity in mind? I'd love to hear about it.</p>
+    <form id="contactForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="email" name="user_email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="button">Send</button>
+    </form>
+    <p id="message"></p>
+</section>
+
+<footer>
+    <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/mpfuni45?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" aria-label="LinkedIn">in</a>
+        <a href="mailto:mpfunivhonani46@gmail.com" aria-label="Email">✉</a>
+    </div>
+    <p>© 2025 Vhonani | All Rights Reserved</p>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
